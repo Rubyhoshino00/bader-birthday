@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080b1c">
+  <meta name="description" content="A tiny midnight story made with care for Bader's 25th birthday.">
+  <title>Moonlit Chapter 25 — For Bader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"><div class="stars"></div><div class="shooting-star"></div></div>
+  <header class="topbar">
+    <a class="wordmark" href="#" id="homeLink"><span class="moonmark">☾</span> MIRA'S LITTLE UNIVERSE</a>
+    <div class="top-right"><span class="date">18 · 11 · 25</span><button id="musicToggle" class="icon-button" aria-label="Toggle ambient sound">♫ <span id="musicLabel">Sound off</span></button></div>
+  </header>
+
+  <main>
+    <section class="landing screen" id="landing">
+      <div class="landing-copy">
+        <p class="kicker"><span class="spark">✦</span> A SECRET BIRTHDAY STORY</p>
+        <h1>Moonlit<br><em>Chapter 25</em></h1>
+        <p class="lead">Somewhere beneath the same sky, a little story was waiting to find you.</p>
+        <p class="intro">For Bader — a friend who deserves more good days, unexpected magic, and dreams that feel a little closer.</p>
+        <button class="primary" id="beginBtn">Enter the story <span>↗</span></button>
+        <p class="tiny-note">A birthday gift made by Mira · best enjoyed slowly</p>
+      </div>
+      <div class="cover-scene" role="img" aria-label="A quiet anime-inspired midnight city beneath a crescent moon">
+        <div class="cover-moon"></div><div class="constellation c1">✦ · ˚ · ✧</div><div class="constellation c2">· ✧ · ✦</div>
+        <div class="distant-hills"></div><div class="city"></div>
+        <div class="window-frame"></div>
+        <div class="person"><i></i><b></b></div>
+        <div class="cover-quote">THE NIGHT IS QUIET.<br>YOUR NEXT CHAPTER ISN'T.</div>
+        <div class="cat-silhouette">◆</div>
+      </div>
+      <div class="landing-bottom"><span>AN INTERACTIVE STORY</span><span>✦</span><span>MADE WITH CARE</span></div>
+    </section>
+
+    <section class="story screen hidden" id="story" aria-live="polite">
+      <div class="story-meta"><span id="chapterNumber">PROLOGUE</span><span class="meta-star">✦</span><span id="chapterName">THE LETTER UNDER THE MOON</span></div>
+      <div class="scene" id="scene">
+        <div class="scene-moon"></div><div class="scene-landscape"></div>
+        <div class="scene-figure" id="figure">☾</div>
+        <div class="scene-art-label" id="sceneArtLabel">A message from somewhere beyond midnight</div>
+      </div>
+      <article class="dialogue-panel">
+        <div class="speaker-row"><span class="speaker-icon">✧</span><span id="speaker">THE NARRATOR</span></div>
+        <p class="dialogue-text" id="dialogueText"></p>
+        <div class="choice-list" id="choiceList"></div>
+        <button id="continueBtn" class="continue hidden">Continue <span>→</span></button>
+      </article>
+      <div class="story-footer"><span id="progressText">01 / 06</span><div class="progress-track"><div id="progressFill"></div></div><button id="restartSmall" class="text-button">Restart ↺</button></div>
+    </section>
+
+    <section class="finale screen hidden" id="finale">
+      <div class="finale-moon">☾</div><p class="kicker">THE SKY HAS ONE LAST THING TO SAY</p>
+      <h2>Happy 25th Birthday,<br><em>Bader.</em></h2>
+      <div class="wish-card">
+        <p class="handwritten">A little note from Mira ♡</p>
+        <p>I hope this new chapter brings you peace when life gets loud, good people when the road feels long, and little moments that remind you how much there is to look forward to.</p>
+        <p>You don't need to have everything figured out. Keep moving at your own pace, be proud of the effort nobody sees, and don't forget to leave room for joy along the way.</p>
+        <p>Thank you for being my friend. I'm genuinely rooting for you — for the dreams you're chasing, the hard days you're getting through, and all the good things that haven't found you yet.</p>
+        <p class="signature">— Mira <span>✦</span></p>
+      </div>
+      <p class="finale-tagline">25 years behind you. A whole sky ahead.</p>
+      <div class="final-actions"><button class="primary" id="replayBtn">Read it again <span>↺</span></button><button class="secondary" id="copyLinkBtn">Copy a little birthday message</button></div>
+      <p id="copyFeedback" class="tiny-note" role="status"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>FOR BADER, ON 18 NOVEMBER</span><span>BUILT FROM STARDUST & FRIENDSHIP <b>♡</b></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
